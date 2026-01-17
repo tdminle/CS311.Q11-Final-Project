@@ -1,0 +1,19 @@
+[project]
+name = "rag-agent"
+version = "0.1.0"
+description = "Hybrid Ensemble Agentic RAG - Vietnam Traffic Law Q&A System"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.109.0",
+    "uvicorn[standard]>=0.27.0",
+    "streamlit>=1.30.0",
+    "qdrant-client>=1.7.0",
+    "elasticsearch>=8.12.0",
+    "aiohttp>=3.9.0",
+    "httpx>=0.26.0",
+    "pydantic>=2.5.0",
+    "pydantic-settings>=2.1.0",
+    "python-dotenv>=1.0.0",
+    "langfuse>=2.0.0",
+]
