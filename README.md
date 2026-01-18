@@ -14,22 +14,7 @@ Hệ thống hỏi đáp thông minh về Luật Giao thông Việt Nam sử d�
 
 ## 🏗️ Kiến trúc
 
-```
-User → Streamlit UI → FastAPI Backend
-                      ↓
-        ┌─────────────┴──────────────┐
-        ↓                            ↓
-    Qdrant DB                  Elasticsearch
-    (Vector Search)            (Keyword Search)
-        ↓                            ↓
-        └─────────────┬──────────────┘
-                      ↓
-              RRF Algorithm (Fusion)
-                      ↓
-              BGE-Reranker (Top N)
-                      ↓
-          DeepSeek-R1 (Generate Answer)
-```
+![RAG system](images/RAG_system.png)
 
 ## 📁 Cấu trúc dự án
 
