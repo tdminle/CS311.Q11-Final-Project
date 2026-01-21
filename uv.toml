@@ -1,0 +1,5 @@
+# Sử dụng copy mode để tránh hardlink issues trên Windows
+link-mode = "copy"
+
+# Cache directory (tuỳ chọn)
+# cache-dir = "C:/temp/uv-cache"

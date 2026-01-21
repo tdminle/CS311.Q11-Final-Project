@@ -1,0 +1,57 @@
+[
+  {
+    "question": "Làn đường là gì?",
+    "ground_truth": "Làn đường là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có bề rộng đủ cho xe chạy an toàn.",
+    "contexts": ["làn đường", "phần đường xe chạy", "bề rộng", "chiều dọc"]
+  },
+  {
+    "question": "Đường cao tốc là gì?",
+    "ground_truth": "Đường cao tốc là đường dành cho xe cơ giới, có dải phân cách chia đường cho xe chạy hai chiều riêng biệt, không giao nhau cùng mức với một hoặc các đường khác.",
+    "contexts": ["đường cao tốc", "xe cơ giới", "dải phân cách", "hai chiều"]
+  },
+  {
+    "question": "Cơ quan quản lý đường bộ là gì?",
+    "ground_truth": "Cơ quan quản lý đường bộ là cơ quan nhà nước có thẩm quyền quản lý, khai thác và bảo trì đường bộ theo quy định của pháp luật.",
+    "contexts": ["cơ quan quản lý", "đường bộ", "nhà nước", "quản lý"]
+  },
+  {
+    "question": "Phạm vi điều chỉnh của Luật Giao thông đường bộ là gì?",
+    "ground_truth": "Luật này quy định về quy tắc giao thông đường bộ, kết cấu hạ tầng giao thông đường bộ, phương tiện và người tham gia giao thông đường bộ, vận tải đường bộ và quản lý nhà nước về giao thông đường bộ.",
+    "contexts": ["phạm vi", "quy tắc giao thông", "kết cấu hạ tầng", "vận tải"]
+  },
+  {
+    "question": "Dải phân cách là gì?",
+    "ground_truth": "Dải phân cách là bộ phận của đường để phân chia mặt đường thành hai chiều xe chạy riêng biệt hoặc để phân chia phần đường của xe cơ giới và xe thô sơ.",
+    "contexts": ["dải phân cách", "phân chia", "hai chiều", "xe cơ giới"]
+  },
+  {
+    "question": "Hành lang an toàn đường bộ là gì?",
+    "ground_truth": "Hành lang an toàn đường bộ là dải đất dọc hai bên đất của đường bộ, tính từ mép ngoài đất của đường bộ ra hai bên để bảo đảm an toàn giao thông đường bộ.",
+    "contexts": [
+      "hành lang an toàn",
+      "dải đất",
+      "an toàn giao thông",
+      "đường bộ"
+    ]
+  },
+  {
+    "question": "Nơi đường giao nhau là gì?",
+    "ground_truth": "Nơi đường giao nhau cùng mức là nơi hai hay nhiều đường bộ gặp nhau trên cùng một mặt phẳng, gồm cả mặt bằng hình thành vị trí giao nhau đó.",
+    "contexts": ["đường giao nhau", "mặt phẳng", "giao nhau", "đường bộ"]
+  },
+  {
+    "question": "Đường ưu tiên là gì?",
+    "ground_truth": "Đường ưu tiên là đường mà trên đó phương tiện tham gia giao thông đường bộ được các phương tiện giao thông đến từ hướng khác nhường đường khi qua nơi đường giao nhau.",
+    "contexts": ["đường ưu tiên", "nhường đường", "giao nhau", "phương tiện"]
+  },
+  {
+    "question": "Phương tiện giao thông đường bộ gồm những loại nào?",
+    "ground_truth": "Phương tiện giao thông đường bộ gồm phương tiện giao thông cơ giới đường bộ và phương tiện giao thông thô sơ đường bộ.",
+    "contexts": ["phương tiện", "cơ giới", "thô sơ", "đường bộ"]
+  },
+  {
+    "question": "Khổ giới hạn của đường bộ là gì?",
+    "ground_truth": "Khổ giới hạn của đường bộ là khoảng trống có kích thước giới hạn về chiều cao, chiều rộng của đường, cầu, bến phà, hầm đường bộ để các xe kể cả hàng hóa xếp trên xe đi qua được an toàn.",
+    "contexts": ["khổ giới hạn", "chiều cao", "chiều rộng", "an toàn"]
+  }
+]

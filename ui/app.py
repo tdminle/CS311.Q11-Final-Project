@@ -1,99 +1,70 @@
 """
-Streamlit Frontend - Giao diện chatbot cho hệ thống RAG
+Streamlit UI for Vietnamese Law RAG System
 """
 import streamlit as st
-import httpx
-import asyncio
-from typing import List, Dict
+import sys
+import os
 
-# Cấu hình trang
+# Add parent directory to path
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from src.services.rag import RAGService
+from src.utils.logger import get_logger
+
+logger = get_logger(__name__)
+
+# Page config
 st.set_page_config(
-    page_title="Luật Giao thông Việt Nam - Chatbot",
-    page_icon="🚦",
+    page_title="Vietnamese Law RAG",
+    page_icon="⚖️",
     layout="wide"
 )
 
-# URL của backend API
-API_URL = "http://localhost:8000"
+# Initialize RAG service
+@st.cache_resource
+def get_rag_service():
+    """Initialize and cache RAG service"""
+    logger.info("Initializing RAG service for Streamlit")
+    return RAGService(
+        qdrant_host="localhost",
+        qdrant_port=6333,
+        collection_name="Law",
+        es_host="localhost",
+        es_port=9200,
+        es_index_name="law_documents",
+        top_k=5
+    )
 
-
-async def query_api(question: str, top_k: int = 20, top_n: int = 5) -> Dict:
-    """
-    Gọi API backend để lấy câu trả lời
-    """
-    async with httpx.AsyncClient(timeout=60.0) as client:
-        response = await client.post(
-            f"{API_URL}/query",
-            json={
-                "question": question,
-                "top_k": top_k,
-                "top_n": top_n
-            }
-        )
-        response.raise_for_status()
-        return response.json()
-
-
-def display_message(role: str, content: str):
-    """
-    Hiển thị message trong chat interface
-    """
-    if role == "user":
-        st.chat_message("user").write(content)
-    else:
-        st.chat_message("assistant").write(content)
-
-
+# Main UI
 def main():
-    """Main application"""
+    st.title("⚖️ Vietnamese Law RAG System")
+    st.markdown("Hệ thống hỏi đáp về luật giao thông đường bộ Việt Nam")
     
-    # Header
-    st.title("🚦 Tư vấn Luật Giao thông Việt Nam")
-    st.markdown("""
-    Hệ thống hỏi đáp thông minh về Luật Giao thông Việt Nam  
-    *Powered by Hybrid Ensemble Agentic RAG - DeepSeek R1*
-    """)
-    
-    # Sidebar - Settings
+    # Sidebar
     with st.sidebar:
-        st.header("⚙️ Cài đặt")
+        st.header("⚙️ Cấu hình")
         
-        top_k = st.slider(
-            "Số lượng documents tìm kiếm (Top K)",
-            min_value=5,
-            max_value=50,
-            value=20,
-            help="Số lượng documents lấy từ mỗi search engine"
-        )
-        
-        top_n = st.slider(
-            "Số lượng contexts cho LLM (Top N)",
-            min_value=1,
-            max_value=10,
-            value=5,
-            help="Số lượng contexts sau rerank để đưa vào LLM"
-        )
-        
-        show_reasoning = st.checkbox(
-            "Hiển thị quá trình suy luận",
-            value=False,
-            help="Hiển thị phần <thinking> của model"
-        )
-        
-        show_contexts = st.checkbox(
-            "Hiển thị contexts",
-            value=True,
-            help="Hiển thị các đoạn văn bản tham khảo"
-        )
-        
-        st.markdown("---")
-        st.markdown("### 📊 Ví dụ câu hỏi")
-        st.markdown("""
-        - Vượt đèn đỏ xe máy phạt bao nhiêu?
-        - Không đội mũ bảo hiểm bị phạt thế nào?
-        - Điều khiển xe khi say rượu bị xử phạt ra sao?
-        - Tốc độ tối đa trong khu dân cư là bao nhiêu?
+        # Display system info
+        st.info("""
+        **Hệ thống:**
+        - Vector DB: Qdrant (semantic search)
+        - Keyword DB: Elasticsearch (BM25)
+        - Retrieval: EnsembleRetriever
+        - Reranker: BGE-reranker-v2-m3
+        - LLM: Qwen2.5-7B-Instruct
         """)
+        
+        # Advanced settings
+        with st.expander("🔧 Cài đặt nâng cao"):
+            top_k = st.slider("Số documents retrieve", 3, 10, 5)
+            rerank_top_k = st.slider("Số documents sau rerank", 1, 5, 3)
+            show_sources = st.checkbox("Hiển thị nguồn", value=True)
+            show_debug = st.checkbox("Debug mode", value=False)
+        
+        # Clear chat button
+        if st.button("🗑️ Xóa lịch sử chat"):
+            st.session_state.messages = []
+            st.rerun()
     
     # Initialize chat history
     if "messages" not in st.session_state:
@@ -101,59 +72,78 @@ def main():
     
     # Display chat history
     for message in st.session_state.messages:
-        display_message(message["role"], message["content"])
+        with st.chat_message(message["role"]):
+            st.markdown(message["content"])
+            if "sources" in message and show_sources:
+                with st.expander("📚 Nguồn tham khảo"):
+                    for i, source in enumerate(message["sources"], 1):
+                        st.markdown(f"**{i}. {source['title']}**")
+                        st.markdown(f"> {source['content'][:200]}...")
+                        st.markdown("---")
     
     # Chat input
     if prompt := st.chat_input("Nhập câu hỏi của bạn về luật giao thông..."):
-        # Add user message to chat
+        # Add user message
         st.session_state.messages.append({"role": "user", "content": prompt})
-        display_message("user", prompt)
+        with st.chat_message("user"):
+            st.markdown(prompt)
         
-        # Show loading spinner
-        with st.spinner("🤔 Đang tìm kiếm và phân tích..."):
-            try:
-                # Call API
-                result = asyncio.run(query_api(prompt, top_k, top_n))
-                
-                # Display answer
-                answer = result.get("answer", "Không có câu trả lời")
-                st.session_state.messages.append({"role": "assistant", "content": answer})
-                display_message("assistant", answer)
-                
-                # Display reasoning if enabled
-                if show_reasoning and result.get("reasoning"):
-                    with st.expander("🧠 Quá trình suy luận"):
-                        st.markdown(result["reasoning"])
-                
-                # Display contexts if enabled
-                if show_contexts and result.get("contexts"):
-                    with st.expander(f"📚 Tài liệu tham khảo ({len(result['contexts'])} documents)"):
-                        for i, ctx in enumerate(result["contexts"]):
-                            st.markdown(f"**Document {i+1}** (Score: {ctx.get('score', 0):.4f})")
-                            st.info(ctx.get("content", ""))
-                            st.markdown("---")
-            
-            except Exception as e:
-                error_msg = f"❌ Lỗi: {str(e)}"
-                st.error(error_msg)
-                st.session_state.messages.append({"role": "assistant", "content": error_msg})
-    
-    # Clear chat button
-    if st.sidebar.button("🗑️ Xóa lịch sử chat"):
-        st.session_state.messages = []
-        st.rerun()
-    
-    # Footer
-    st.sidebar.markdown("---")
-    st.sidebar.markdown("""
-    ### 💡 Về hệ thống
-    - **Vector DB**: Qdrant
-    - **Keyword Search**: Elasticsearch  
-    - **Fusion**: RRF Algorithm
-    - **Reranker**: BGE-Reranker-v2-m3
-    - **LLM**: DeepSeek-R1-7B
-    """)
-
+        # Generate response
+        with st.chat_message("assistant"):
+            with st.spinner("Đang tìm kiếm và tạo câu trả lời..."):
+                try:
+                    # Get RAG service
+                    rag_service = get_rag_service()
+                    
+                    # Generate response (using sync version)
+                    result = rag_service.generate_response_sync(prompt)
+                    
+                    # Display answer
+                    st.markdown(result["answer"])
+                    
+                    # Prepare sources for display
+                    sources = []
+                    if "source_documents" in result:
+                        for doc in result["source_documents"]:
+                            sources.append({
+                                "title": doc.metadata.get("title", "No title"),
+                                "content": doc.page_content
+                            })
+                    
+                    # Show sources if enabled
+                    if sources and show_sources:
+                        with st.expander("📚 Nguồn tham khảo"):
+                            for i, source in enumerate(sources, 1):
+                                st.markdown(f"**{i}. {source['title']}**")
+                                st.markdown(f"> {source['content'][:200]}...")
+                                if show_debug:
+                                    st.code(source['content'])
+                                st.markdown("---")
+                    
+                    # Debug info
+                    if show_debug:
+                        with st.expander("🔍 Debug Info"):
+                            st.json({
+                                "query": prompt,
+                                "num_sources": len(sources),
+                                "answer_length": len(result["answer"])
+                            })
+                    
+                    # Save assistant message
+                    st.session_state.messages.append({
+                        "role": "assistant",
+                        "content": result["answer"],
+                        "sources": sources
+                    })
+                    
+                except Exception as e:
+                    error_msg = f"❌ Lỗi: {str(e)}"
+                    st.error(error_msg)
+                    logger.error(f"Error generating response: {e}", exc_info=True)
+                    st.session_state.messages.append({
+                        "role": "assistant",
+                        "content": error_msg
+                    })
 
 if __name__ == "__main__":
     main()

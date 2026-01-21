@@ -8,15 +8,10 @@ wheels/
 
 # Virtual environments
 .venv
-
-.md 
-
-LANGFUSE*.md
-
-README_init.md
-
-test*.py
-
-TESTING_REPORT.md
-
+testing
+readme_update
+qdrant_storage
+rag_services
+elasticsearch_data
+output.json
 .env
