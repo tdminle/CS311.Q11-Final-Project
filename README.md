@@ -10,6 +10,7 @@ Hệ thống RAG (Retrieval-Augmented Generation) cho luật giao thông đườ
 - **Vietnamese Support**: Embedding được tối ưu cho tiếng Việt
 - **Streamlit UI**: Giao diện web thân thiện
 - **Langfuse Observability**: updating...
+
 # Demo 
 
 ![demo](images\demo.png)
