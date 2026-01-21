@@ -13,11 +13,11 @@ Hệ thống RAG (Retrieval-Augmented Generation) cho luật giao thông đườ
 
 # Demo 
 
-![demo](images\demo.png)
+![demo](images/demo.png)
 
 ## 🏗️ Kiến trúc hệ thống
 
-![System_image](images\system.png)
+![System_image](images/system.png)
 
 
 ## 📁 Cấu trúc dự án
