@@ -1,0 +1,905 @@
+[
+  {
+    "id": 1,
+    "type": "core_legal_qa",
+    "question": "Vượt đèn đỏ khi điều khiển xe máy bị xử phạt như thế nào?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Người điều khiển xe mô tô không chấp hành tín hiệu đèn giao thông bị xử phạt theo quy định tại Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 2,
+    "type": "core_legal_qa",
+    "question": "Người điều khiển ô tô vượt đèn đỏ bị xử phạt ra sao?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người điều khiển ô tô không chấp hành tín hiệu đèn giao thông bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 3,
+    "type": "core_legal_qa",
+    "question": "Xe máy chạy quá tốc độ cho phép bị xử phạt thế nào?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Hành vi điều khiển xe mô tô chạy quá tốc độ cho phép bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 4,
+    "type": "core_legal_qa",
+    "question": "Người lái ô tô chạy quá tốc độ quy định bị xử phạt ra sao?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người điều khiển ô tô chạy quá tốc độ quy định bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 5,
+    "type": "core_legal_qa",
+    "question": "Không đội mũ bảo hiểm khi đi xe máy bị xử phạt thế nào?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Người điều khiển xe mô tô không đội mũ bảo hiểm bị xử phạt theo quy định tại Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 6,
+    "type": "core_legal_qa",
+    "question": "Chở quá số người quy định trên xe máy bị xử phạt ra sao?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Hành vi điều khiển xe mô tô chở quá số người quy định bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 7,
+    "type": "core_legal_qa",
+    "question": "Người điều khiển xe máy không mang theo giấy phép lái xe bị xử phạt thế nào?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Người điều khiển xe mô tô không mang theo giấy phép lái xe bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 8,
+    "type": "core_legal_qa",
+    "question": "Người lái ô tô không mang theo giấy đăng ký xe bị xử phạt ra sao?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người điều khiển ô tô không mang theo giấy đăng ký xe bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 9,
+    "type": "core_legal_qa",
+    "question": "Người điều khiển xe máy có nồng độ cồn bị xử phạt như thế nào?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Người điều khiển xe mô tô có nồng độ cồn trong máu hoặc hơi thở bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 10,
+    "type": "core_legal_qa",
+    "question": "Người điều khiển ô tô có nồng độ cồn bị xử phạt ra sao?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người điều khiển ô tô có nồng độ cồn trong máu hoặc hơi thở bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 11,
+    "type": "core_legal_qa",
+    "question": "Xe máy đi không đúng làn đường quy định bị xử phạt như thế nào?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Người điều khiển xe mô tô đi không đúng làn đường quy định bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 12,
+    "type": "core_legal_qa",
+    "question": "Ô tô đi vào làn đường dành riêng cho xe máy bị xử phạt ra sao?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người điều khiển ô tô đi vào làn đường dành riêng cho xe mô tô bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 13,
+    "type": "core_legal_qa",
+    "question": "Xe máy quay đầu xe tại nơi có biển cấm quay đầu bị xử phạt như thế nào?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Hành vi điều khiển xe mô tô quay đầu tại nơi có biển cấm quay đầu bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 14,
+    "type": "core_legal_qa",
+    "question": "Ô tô quay đầu xe tại nơi có biển cấm quay đầu bị xử phạt ra sao?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người điều khiển ô tô quay đầu xe tại nơi có biển cấm quay đầu bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 15,
+    "type": "core_legal_qa",
+    "question": "Xe máy dừng, đỗ xe không đúng nơi quy định bị xử phạt như thế nào?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Người điều khiển xe mô tô dừng, đỗ xe không đúng nơi quy định bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 16,
+    "type": "core_legal_qa",
+    "question": "Ô tô dừng xe tại nơi có biển cấm dừng bị xử phạt ra sao?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người điều khiển ô tô dừng xe tại nơi có biển cấm dừng bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 17,
+    "type": "core_legal_qa",
+    "question": "Xe máy không bật đèn chiếu sáng khi đi trong hầm đường bộ bị xử phạt thế nào?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Người điều khiển xe mô tô không bật đèn chiếu sáng khi đi trong hầm đường bộ bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 18,
+    "type": "core_legal_qa",
+    "question": "Ô tô không bật đèn chiếu sáng khi đi trong hầm đường bộ bị xử phạt ra sao?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người điều khiển ô tô không bật đèn chiếu sáng khi đi trong hầm đường bộ bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 19,
+    "type": "core_legal_qa",
+    "question": "Xe máy sử dụng còi không đúng quy định trong khu dân cư bị xử phạt như thế nào?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Hành vi điều khiển xe mô tô sử dụng còi không đúng quy định trong khu dân cư bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 20,
+    "type": "core_legal_qa",
+    "question": "Ô tô không chấp hành biển báo hiệu đường bộ bị xử phạt ra sao?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người điều khiển ô tô không chấp hành hiệu lệnh của biển báo hiệu đường bộ bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 21,
+    "type": "core_legal_qa",
+    "question": "Xe máy không nhường đường cho xe ưu tiên đang phát tín hiệu được quyền ưu tiên bị xử phạt như thế nào?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Người điều khiển xe mô tô không nhường đường cho xe được quyền ưu tiên đang phát tín hiệu ưu tiên bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 22,
+    "type": "core_legal_qa",
+    "question": "Ô tô không nhường đường cho xe cứu thương đang làm nhiệm vụ bị xử phạt ra sao?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người điều khiển ô tô không nhường đường cho xe cứu thương đang làm nhiệm vụ bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 23,
+    "type": "core_legal_qa",
+    "question": "Xe máy không chấp hành hiệu lệnh của người điều khiển giao thông bị xử phạt thế nào?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Người điều khiển xe mô tô không chấp hành hiệu lệnh của người điều khiển giao thông bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 24,
+    "type": "core_legal_qa",
+    "question": "Ô tô không chấp hành hiệu lệnh của người điều khiển giao thông bị xử phạt ra sao?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người điều khiển ô tô không chấp hành hiệu lệnh của người điều khiển giao thông bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 25,
+    "type": "core_legal_qa",
+    "question": "Xe máy đi vào đường cao tốc bị xử phạt như thế nào?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Hành vi điều khiển xe mô tô đi vào đường cao tốc bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 26,
+    "type": "core_legal_qa",
+    "question": "Ô tô dừng xe trên làn dừng khẩn cấp trên cao tốc không đúng quy định bị xử phạt ra sao?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người điều khiển ô tô dừng xe trên làn dừng khẩn cấp trên cao tốc không đúng quy định bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 27,
+    "type": "core_legal_qa",
+    "question": "Xe máy đi ngược chiều trên đường một chiều bị xử phạt như thế nào?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Người điều khiển xe mô tô đi ngược chiều trên đường một chiều bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 28,
+    "type": "core_legal_qa",
+    "question": "Ô tô đi ngược chiều trên đường một chiều bị xử phạt ra sao?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người điều khiển ô tô đi ngược chiều trên đường một chiều bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 29,
+    "type": "core_legal_qa",
+    "question": "Xe máy không bật đèn tín hiệu khi chuyển hướng bị xử phạt thế nào?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Người điều khiển xe mô tô không bật đèn tín hiệu khi chuyển hướng bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 30,
+    "type": "core_legal_qa",
+    "question": "Ô tô không bật đèn tín hiệu khi chuyển làn đường bị xử phạt ra sao?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người điều khiển ô tô không bật đèn tín hiệu khi chuyển làn đường bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 31,
+    "type": "core_legal_qa",
+    "question": "Người điều khiển xe máy không mang theo bảo hiểm trách nhiệm dân sự bắt buộc bị xử phạt như thế nào?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Người điều khiển xe mô tô không mang theo bảo hiểm trách nhiệm dân sự bắt buộc bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 32,
+    "type": "core_legal_qa",
+    "question": "Ô tô không mang theo bảo hiểm trách nhiệm dân sự bắt buộc khi tham gia giao thông bị xử phạt ra sao?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người điều khiển ô tô không mang theo bảo hiểm trách nhiệm dân sự bắt buộc bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 33,
+    "type": "core_legal_qa",
+    "question": "Ô tô tham gia giao thông khi đã hết hạn kiểm định an toàn kỹ thuật bị xử phạt thế nào?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người điều khiển ô tô tham gia giao thông khi xe đã hết hạn kiểm định an toàn kỹ thuật bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 34,
+    "type": "core_legal_qa",
+    "question": "Ô tô không có giấy chứng nhận kiểm định an toàn kỹ thuật khi lưu thông bị xử phạt ra sao?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người điều khiển ô tô không có giấy chứng nhận kiểm định an toàn kỹ thuật khi lưu thông bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 35,
+    "type": "core_legal_qa",
+    "question": "Xe ô tô đã hết niên hạn sử dụng nhưng vẫn tham gia giao thông bị xử phạt như thế nào?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Hành vi điều khiển ô tô đã hết niên hạn sử dụng tham gia giao thông bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 36,
+    "type": "core_legal_qa",
+    "question": "Xe máy lắp thêm đèn chiếu sáng không đúng quy định bị xử phạt thế nào?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Người điều khiển xe mô tô lắp thêm đèn chiếu sáng không đúng quy định bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 37,
+    "type": "core_legal_qa",
+    "question": "Xe máy kéo, đẩy xe khác tham gia giao thông bị xử phạt như thế nào?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Hành vi điều khiển xe mô tô kéo, đẩy xe khác tham gia giao thông bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 38,
+    "type": "core_legal_qa",
+    "question": "Người điều khiển ô tô kéo xe khác không đúng quy định bị xử phạt ra sao?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người điều khiển ô tô kéo xe khác không đúng quy định bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 39,
+    "type": "core_legal_qa",
+    "question": "Người điều khiển xe máy sử dụng điện thoại khi đang lái xe bị xử phạt như thế nào?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Người điều khiển xe mô tô sử dụng điện thoại khi đang điều khiển xe bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 40,
+    "type": "core_legal_qa",
+    "question": "Người lái ô tô sử dụng điện thoại khi đang điều khiển phương tiện bị xử phạt ra sao?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người điều khiển ô tô sử dụng điện thoại khi đang điều khiển phương tiện bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 41,
+    "type": "core_legal_qa",
+    "question": "Xe máy không chấp hành vạch kẻ đường bị xử phạt như thế nào?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Người điều khiển xe mô tô không chấp hành vạch kẻ đường bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 42,
+    "type": "core_legal_qa",
+    "question": "Ô tô không chấp hành vạch kẻ đường bị xử phạt ra sao?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người điều khiển ô tô không chấp hành vạch kẻ đường bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 43,
+    "type": "core_legal_qa",
+    "question": "Xe máy đi vào khu vực cấm xe mô tô bị xử phạt như thế nào?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Hành vi điều khiển xe mô tô đi vào khu vực cấm xe mô tô bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 44,
+    "type": "core_legal_qa",
+    "question": "Ô tô đi vào đường có biển cấm ô tô bị xử phạt ra sao?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người điều khiển ô tô đi vào đường có biển cấm ô tô bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 45,
+    "type": "core_legal_qa",
+    "question": "Xe máy không giữ khoảng cách an toàn với xe phía trước bị xử phạt như thế nào?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Người điều khiển xe mô tô không giữ khoảng cách an toàn với xe phía trước bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 46,
+    "type": "core_legal_qa",
+    "question": "Ô tô không giữ khoảng cách an toàn với xe chạy liền trước bị xử phạt ra sao?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người điều khiển ô tô không giữ khoảng cách an toàn với xe chạy liền trước bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 47,
+    "type": "core_legal_qa",
+    "question": "Xe máy bấm còi trong thời gian cấm sử dụng còi bị xử phạt như thế nào?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Người điều khiển xe mô tô sử dụng còi trong thời gian cấm sử dụng còi bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 48,
+    "type": "core_legal_qa",
+    "question": "Ô tô bấm còi trong khu vực có biển cấm còi bị xử phạt ra sao?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người điều khiển ô tô sử dụng còi tại nơi có biển cấm còi bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 49,
+    "type": "core_legal_qa",
+    "question": "Xe máy không chấp hành quy định về nhường đường tại nơi giao nhau bị xử phạt như thế nào?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Người điều khiển xe mô tô không chấp hành quy định về nhường đường tại nơi giao nhau bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 50,
+    "type": "core_legal_qa",
+    "question": "Ô tô không nhường đường tại nơi giao nhau theo quy định bị xử phạt ra sao?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người điều khiển ô tô không nhường đường tại nơi giao nhau theo quy định bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 51,
+    "type": "core_legal_qa",
+    "question": "Xe máy chở hàng hóa cồng kềnh gây mất an toàn giao thông bị xử phạt như thế nào?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Người điều khiển xe mô tô chở hàng hóa cồng kềnh gây mất an toàn giao thông bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 52,
+    "type": "core_legal_qa",
+    "question": "Ô tô chở hàng vượt quá kích thước cho phép bị xử phạt ra sao?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người điều khiển ô tô chở hàng vượt quá kích thước cho phép bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 53,
+    "type": "core_legal_qa",
+    "question": "Xe máy không có gương chiếu hậu theo quy định bị xử phạt như thế nào?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Người điều khiển xe mô tô không có gương chiếu hậu theo quy định bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 54,
+    "type": "core_legal_qa",
+    "question": "Ô tô không thắt dây an toàn khi đang lưu thông bị xử phạt ra sao?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người điều khiển ô tô không thắt dây an toàn khi xe đang lưu thông bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 55,
+    "type": "core_legal_qa",
+    "question": "Xe máy che, làm mờ biển số khi tham gia giao thông bị xử phạt như thế nào?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Hành vi điều khiển xe mô tô che, làm mờ biển số khi tham gia giao thông bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 56,
+    "type": "core_legal_qa",
+    "question": "Ô tô gắn biển số không đúng với giấy đăng ký xe bị xử phạt ra sao?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người điều khiển ô tô gắn biển số không đúng với giấy đăng ký xe bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 57,
+    "type": "core_legal_qa",
+    "question": "Xe máy sử dụng đèn chiếu xa trong khu vực đông dân cư bị xử phạt như thế nào?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Người điều khiển xe mô tô sử dụng đèn chiếu xa trong khu vực đông dân cư bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 58,
+    "type": "core_legal_qa",
+    "question": "Ô tô sử dụng đèn chiếu xa trong khu vực đô thị không đúng quy định bị xử phạt ra sao?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người điều khiển ô tô sử dụng đèn chiếu xa trong khu vực đô thị không đúng quy định bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 59,
+    "type": "core_legal_qa",
+    "question": "Xe máy quay đầu xe trên cầu bị xử phạt như thế nào?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Hành vi điều khiển xe mô tô quay đầu xe trên cầu bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 60,
+    "type": "core_legal_qa",
+    "question": "Ô tô mở cửa xe không bảo đảm an toàn gây cản trở giao thông bị xử phạt ra sao?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người điều khiển ô tô mở cửa xe không bảo đảm an toàn gây cản trở giao thông bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 61,
+    "type": "user_realistic_qa",
+    "question": "Tôi đi xe máy mà lỡ vượt đèn vàng chuyển sang đỏ thì có bị phạt không?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Người điều khiển xe mô tô không chấp hành tín hiệu đèn giao thông bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 62,
+    "type": "user_realistic_qa",
+    "question": "Lái ô tô mà chạy quá tốc độ ghi trên biển báo thì bị xử lý thế nào?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người điều khiển ô tô chạy quá tốc độ quy định bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 63,
+    "type": "user_realistic_qa",
+    "question": "Tôi quên bật xi-nhan khi rẽ xe máy thì có bị phạt không?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Người điều khiển xe mô tô không bật đèn tín hiệu khi chuyển hướng bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 64,
+    "type": "user_realistic_qa",
+    "question": "Tài xế ô tô chuyển làn mà không bật đèn báo rẽ có bị phạt không?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người điều khiển ô tô không bật đèn tín hiệu khi chuyển làn đường bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 65,
+    "type": "user_realistic_qa",
+    "question": "Đi xe máy mà quên mang theo giấy phép lái xe thì bị xử phạt ra sao?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Người điều khiển xe mô tô không mang theo giấy phép lái xe bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 66,
+    "type": "user_realistic_qa",
+    "question": "Lái ô tô mà quên mang theo đăng ký xe thì có bị phạt không?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người điều khiển ô tô không mang theo giấy đăng ký xe bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 67,
+    "type": "user_realistic_qa",
+    "question": "Tôi chạy xe máy vào đường cấm xe máy do không để ý biển báo thì xử phạt thế nào?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Hành vi điều khiển xe mô tô đi vào đường cấm xe mô tô bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 68,
+    "type": "user_realistic_qa",
+    "question": "Ô tô đi nhầm vào làn dành riêng cho xe máy thì có bị xử phạt không?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người điều khiển ô tô đi vào làn đường dành riêng cho xe mô tô bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 69,
+    "type": "user_realistic_qa",
+    "question": "Tôi đi xe máy mà có uống một chút bia thì có bị phạt không?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Người điều khiển xe mô tô có nồng độ cồn trong máu hoặc hơi thở bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 70,
+    "type": "user_realistic_qa",
+    "question": "Lái ô tô sau khi uống rượu bia nhưng chưa say thì có bị xử phạt không?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người điều khiển ô tô có nồng độ cồn trong máu hoặc hơi thở bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 71,
+    "type": "real_world_legal_qa",
+    "question": "Tôi đi xe máy ban đêm mà quên bật đèn chiếu sáng thì có bị phạt không?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Người điều khiển xe mô tô không bật đèn chiếu sáng khi tham gia giao thông bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 72,
+    "type": "real_world_legal_qa",
+    "question": "Lái ô tô vào ban đêm mà không bật đèn xe thì bị xử lý thế nào?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người điều khiển ô tô không bật đèn chiếu sáng khi tham gia giao thông bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 73,
+    "type": "real_world_legal_qa",
+    "question": "Tôi chở con nhỏ trên xe máy mà không đội mũ bảo hiểm cho bé thì có bị phạt không?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Người điều khiển xe mô tô chở người không đội mũ bảo hiểm theo quy định bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 74,
+    "type": "real_world_legal_qa",
+    "question": "Ngồi ghế sau ô tô mà không thắt dây an toàn thì có bị xử phạt không?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người ngồi trên ô tô không thắt dây an toàn khi xe đang lưu thông bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 75,
+    "type": "real_world_legal_qa",
+    "question": "Tôi dừng xe máy tạm để nghe điện thoại sát lề đường thì có bị phạt không?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Người điều khiển xe mô tô dừng xe không đúng quy định gây cản trở giao thông bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 76,
+    "type": "real_world_legal_qa",
+    "question": "Tài xế ô tô dừng xe giữa đường để trả khách nhanh có bị phạt không?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người điều khiển ô tô dừng xe không đúng quy định gây cản trở giao thông bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 77,
+    "type": "real_world_legal_qa",
+    "question": "Tôi chạy xe máy mà vừa đi vừa nghe điện thoại bằng tay thì có bị phạt không?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Người điều khiển xe mô tô sử dụng điện thoại khi đang điều khiển xe bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 78,
+    "type": "real_world_legal_qa",
+    "question": "Lái ô tô vừa chạy vừa nghe điện thoại cầm tay thì bị xử phạt thế nào?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người điều khiển ô tô sử dụng điện thoại khi đang điều khiển phương tiện bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 79,
+    "type": "real_world_legal_qa",
+    "question": "Tôi chạy xe máy lấn sang làn ô tô một đoạn ngắn thì có bị phạt không?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Người điều khiển xe mô tô đi không đúng làn đường quy định bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 80,
+    "type": "real_world_legal_qa",
+    "question": "Ô tô chạy lấn sang làn ngược chiều để vượt xe khác thì có bị phạt không?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 5",
+    "expected_answer": "Người điều khiển ô tô đi không đúng làn đường, phần đường quy định bị xử phạt theo Điều 5 Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "o_to"
+  },
+  {
+    "id": 81,
+    "type": "hallucination_test",
+    "question": "Theo Điều 15 Luật Giao thông đường bộ 2022, người đi bộ vượt đèn đỏ bị xử phạt bao nhiêu tiền?",
+    "expected_law": null,
+    "expected_article": null,
+    "expected_answer": "Không tồn tại Điều 15 Luật Giao thông đường bộ 2022.",
+    "vehicle_type": "nguoi_di_bo"
+  },
+  {
+    "id": 82,
+    "type": "hallucination_test",
+    "question": "Xe máy vượt đèn đỏ năm 2025 bị xử phạt theo Nghị định 100/2019/NĐ-CP như thế nào?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Nghị định 100/2019/NĐ-CP đã hết hiệu lực, hành vi được xử phạt theo Nghị định 168/2024/NĐ-CP.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 83,
+    "type": "hallucination_test",
+    "question": "Người điều khiển xe máy vượt đèn đỏ bị phạt 10 triệu đồng đúng không?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": "Điều 6",
+    "expected_answer": "Mức phạt 10 triệu đồng là không đúng với quy định hiện hành.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 84,
+    "type": "hallucination_test",
+    "question": "Ô tô vượt đèn đỏ sẽ bị xử phạt giống xe máy phải không?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": null,
+    "expected_answer": "Mỗi loại phương tiện có mức xử phạt khác nhau.",
+    "vehicle_type": "oto"
+  },
+  {
+    "id": 85,
+    "type": "hallucination_test",
+    "question": "Xe đạp điện vượt đèn đỏ bị xử phạt theo Điều 6 Nghị định 168/2024/NĐ-CP đúng không?",
+    "expected_law": null,
+    "expected_article": null,
+    "expected_answer": "Xe đạp điện không áp dụng Điều 6 như xe mô tô.",
+    "vehicle_type": "xe_dap_dien"
+  },
+  {
+    "id": 86,
+    "type": "hallucination_test",
+    "question": "Người đi xe máy không đội mũ bảo hiểm lần đầu bị phạt cảnh cáo theo luật mới nhất?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": null,
+    "expected_answer": "Không có quy định xử phạt cảnh cáo cho hành vi này.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 87,
+    "type": "hallucination_test",
+    "question": "Luật có quy định phạt nguội người đi bộ vượt đèn đỏ bằng camera AI không?",
+    "expected_law": null,
+    "expected_article": null,
+    "expected_answer": "Hiện chưa có quy định cụ thể về xử phạt nguội người đi bộ bằng AI.",
+    "vehicle_type": "nguoi_di_bo"
+  },
+  {
+    "id": 88,
+    "type": "hallucination_test",
+    "question": "Xe máy điện vượt đèn đỏ bị xử phạt theo Luật Giao thông đường bộ 2008 hay 2024?",
+    "expected_law": null,
+    "expected_article": null,
+    "expected_answer": "Cần xác định đúng văn bản và loại phương tiện, không thể suy đoán.",
+    "vehicle_type": "xe_may_dien"
+  },
+  {
+    "id": 89,
+    "type": "hallucination_test",
+    "question": "Theo Chương V Nghị định 168/2024/NĐ-CP, xe máy đi ngược chiều bị phạt thế nào?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": null,
+    "expected_answer": "Cần xác định đúng Điều cụ thể, không thể chỉ viện dẫn Chương.",
+    "vehicle_type": "xe_may"
+  },
+  {
+    "id": 90,
+    "type": "hallucination_test",
+    "question": "Luật có cho phép CSGT phạt tại chỗ người vượt đèn đỏ bằng tiền mặt không?",
+    "expected_law": null,
+    "expected_article": null,
+    "expected_answer": "Không có quy định cho phép thu tiền phạt trực tiếp tại chỗ trong mọi trường hợp.",
+    "vehicle_type": "all"
+  },
+  {
+    "id": 91,
+    "type": "temporal_validity",
+    "question": "Từ ngày nào Nghị định 168/2024/NĐ-CP bắt đầu có hiệu lực thi hành?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": null,
+    "expected_answer": "Nghị định 168/2024/NĐ-CP có hiệu lực thi hành từ ngày 01/01/2025.",
+    "vehicle_type": "khong_xac_dinh"
+  },
+  {
+    "id": 92,
+    "type": "temporal_validity",
+    "question": "Hành vi vi phạm giao thông xảy ra trước ngày 01/01/2025 thì áp dụng nghị định nào để xử phạt?",
+    "expected_law": "Nghị định 100/2019/NĐ-CP",
+    "expected_article": null,
+    "expected_answer": "Đối với hành vi vi phạm xảy ra trước ngày 01/01/2025 thì áp dụng quy định xử phạt tại Nghị định 100/2019/NĐ-CP và các văn bản sửa đổi, bổ sung.",
+    "vehicle_type": "khong_xac_dinh"
+  },
+  {
+    "id": 93,
+    "type": "temporal_validity",
+    "question": "Người vi phạm giao thông bị lập biên bản trước 01/01/2025 nhưng ra quyết định xử phạt sau thời điểm này thì áp dụng luật nào?",
+    "expected_law": "Nguyên tắc áp dụng pháp luật",
+    "expected_article": null,
+    "expected_answer": "Việc xử phạt được áp dụng theo quy định pháp luật có hiệu lực tại thời điểm hành vi vi phạm xảy ra.",
+    "vehicle_type": "khong_xac_dinh"
+  },
+  {
+    "id": 94,
+    "type": "temporal_validity",
+    "question": "Luật Trật tự, an toàn giao thông đường bộ 2024 có hiệu lực từ thời điểm nào?",
+    "expected_law": "Luật Trật tự, an toàn giao thông đường bộ 2024",
+    "expected_article": null,
+    "expected_answer": "Luật Trật tự, an toàn giao thông đường bộ 2024 có hiệu lực thi hành từ ngày 01/01/2025.",
+    "vehicle_type": "khong_xac_dinh"
+  },
+  {
+    "id": 95,
+    "type": "temporal_validity",
+    "question": "Sau khi Luật Trật tự, an toàn giao thông đường bộ 2024 có hiệu lực thì Luật Giao thông đường bộ 2008 còn được áp dụng không?",
+    "expected_law": "Luật Trật tự, an toàn giao thông đường bộ 2024",
+    "expected_article": null,
+    "expected_answer": "Kể từ ngày Luật Trật tự, an toàn giao thông đường bộ 2024 có hiệu lực, các quy định tương ứng của Luật Giao thông đường bộ 2008 hết hiệu lực thi hành.",
+    "vehicle_type": "khong_xac_dinh"
+  },
+  {
+    "id": 96,
+    "type": "temporal_validity",
+    "question": "Mức phạt mới trong Nghị định 168/2024/NĐ-CP có được áp dụng cho các vi phạm đã xảy ra trước đó không?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": null,
+    "expected_answer": "Mức phạt mới không được áp dụng hồi tố đối với các hành vi vi phạm xảy ra trước thời điểm nghị định có hiệu lực.",
+    "vehicle_type": "khong_xac_dinh"
+  },
+  {
+    "id": 97,
+    "type": "temporal_validity",
+    "question": "Nếu một quy định xử phạt mới nhẹ hơn so với quy định cũ thì có được áp dụng cho hành vi xảy ra trước đó không?",
+    "expected_law": "Luật Xử lý vi phạm hành chính",
+    "expected_article": null,
+    "expected_answer": "Trường hợp quy định mới có lợi cho người vi phạm thì được áp dụng theo quy định của Luật Xử lý vi phạm hành chính.",
+    "vehicle_type": "khong_xac_dinh"
+  },
+  {
+    "id": 98,
+    "type": "temporal_validity",
+    "question": "Camera giao thông ghi nhận vi phạm vào năm 2024 thì có áp dụng Nghị định 168/2024/NĐ-CP để xử phạt không?",
+    "expected_law": "Nghị định 100/2019/NĐ-CP",
+    "expected_article": null,
+    "expected_answer": "Không, hành vi vi phạm xảy ra trong năm 2024 vẫn áp dụng quy định xử phạt tại Nghị định 100/2019/NĐ-CP.",
+    "vehicle_type": "khong_xac_dinh"
+  },
+  {
+    "id": 99,
+    "type": "temporal_validity",
+    "question": "Thời điểm xác định hiệu lực áp dụng xử phạt là lúc vi phạm hay lúc ra quyết định xử phạt?",
+    "expected_law": "Nguyên tắc áp dụng pháp luật",
+    "expected_article": null,
+    "expected_answer": "Thời điểm xác định hiệu lực áp dụng xử phạt là thời điểm hành vi vi phạm được thực hiện.",
+    "vehicle_type": "khong_xac_dinh"
+  },
+  {
+    "id": 100,
+    "type": "temporal_validity",
+    "question": "Sau ngày 01/01/2025, các văn bản hướng dẫn cũ trái với Nghị định 168/2024/NĐ-CP còn được áp dụng không?",
+    "expected_law": "Nghị định 168/2024/NĐ-CP",
+    "expected_article": null,
+    "expected_answer": "Các văn bản hướng dẫn cũ trái với Nghị định 168/2024/NĐ-CP sẽ không còn được áp dụng kể từ thời điểm nghị định có hiệu lực.",
+    "vehicle_type": "khong_xac_dinh"
+  }
+]
+
+
+
