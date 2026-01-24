@@ -11,7 +11,7 @@ Hệ thống RAG (Retrieval-Augmented Generation) cho luật giao thông đườ
 - **Streamlit UI**: Giao diện web thân thiện
 - **Langfuse Observability**: updating...
 
-# Demo 
+# Demo
 
 ![demo](images/demo.png)
 
@@ -19,28 +19,68 @@ Hệ thống RAG (Retrieval-Augmented Generation) cho luật giao thông đườ
 
 ![System_image](images/system.png)
 
-
 ## 📁 Cấu trúc dự án
 
 ```
-my_final_rag/
-├── data/                      # Folder chứa file PDF gốc
-│   └── *.pdf                  # Các file PDF luật
-├── output_data/               # Folder chứa JSON đã xử lý (tự động tạo)
-│   └── combined_output.json   # File JSON tổng hợp
-├── data_preperation/          # Scripts xử lý dữ liệu
-│   ├── processing.py          # PDFProcessingService - xử lý PDF
-│   └── load_data.py           # Tải dữ liệu vào Qdrant/ES
-├── src/                       # Source code chính
-│   ├── models/                # Models (embedding, LLM, reranker)
-│   ├── services/              # Services (RAG, retrieval, generator)
-│   ├── data_storage/          # Qdrant & Elasticsearch services
-│   └── utils/                 # Utilities (logger)
-├── ui/                        # Streamlit UI
-│   └── app.py
-├── evaluation/                # Evaluation scripts
-├── run_app.py                 # Entry point chính
-└── .env                       # Environment variables
+CS311.Q11-Final-Project/
+├── data/                           # Dữ liệu luật giao thông (PDF/JSON)
+│
+├── data_preperation/               # Module xử lý và nạp dữ liệu
+│   ├── processing.py               # PDFProcessingService - Trích xuất và chunk PDF
+│   ├── load_data.py                # Load dữ liệu vào Qdrant và Elasticsearch
+│   ├── output.json                 # Output JSON từ processing
+│   └── README.md                   # Hướng dẫn xử lý dữ liệu
+│
+├── src/                            # Source code chính của hệ thống
+│   ├── __init__.py
+│   ├── models/                     # Module chứa các models
+│   │   ├── __init__.py
+│   │   ├── embedding.py            # EmbeddingModel - Vietnamese embeddings
+│   │   ├── llm.py                  # LLMService - Language model
+│   │   └── reranker.py             # RerankerModel - Rerank documents
+│   │
+│   ├── services/                   # Module chứa business logic
+│   │   ├── __init__.py
+│   │   ├── retrieval.py            # HybridRetrieval - Qdrant + Elasticsearch
+│   │   ├── generator.py            # ResponseGenerator - Tạo câu trả lời
+│   │   └── rag.py                  # RAGService - Orchestrator chính
+│   │
+│   ├── data_storage/               # Module kết nối vector stores
+│   │   ├── __init__.py
+│   │   ├── qdrant_service.py       # QdrantService - Vector search
+│   │   └── elasticsearch_service.py # ElasticsearchService - Keyword search
+│   │
+│   └── utils/                      # Utilities
+│       ├── __init__.py
+│       └── logger.py               # Logger configuration
+│
+├── ui/                             # Giao diện người dùng
+│   └── app.py                      # Streamlit web app
+│
+├── evaluation/                     # Scripts đánh giá hệ thống
+│   ├── eval_llm_vs_rag.py          # So sánh LLM thuần vs RAG
+│   ├── eval_retrieval_2.py         # Đánh giá chất lượng retrieval
+│   ├── generation_evaluation.py    # Đánh giá generation
+│   ├── hallucination_evaluation.py # Kiểm tra hallucination
+│   └── traffic_law_eval_dataset.json # Dataset đánh giá
+│
+├── testing/                        # Test và debug
+│   ├── main.ipynb                  # Jupyter notebook testing
+│   ├── test_debug.py               # Debug utilities
+│   ├── test_new_rag.py             # Test RAG system
+│   ├── test_rerank.py              # Test reranker
+│   ├── test_retrieval_rerank.py    # Test retrieval + rerank
+│   └── luat/                       # Test data
+│
+├── images/                         # Hình ảnh cho documentation
+│
+├── docker-compose.yml              # Docker config cho Qdrant & Elasticsearch
+├── requirements.txt                # Python dependencies
+├── pyproject.toml                  # Project metadata (uv)
+├── uv.toml                         # UV configuration
+├── run_app.py                      # Entry point chính
+├── README.md                       # Documentation
+└── .env                            # Environment variables (cần tạo)
 ```
 
 ## 🚀 Hướng dẫn cài đặt
